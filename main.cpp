@@ -1,14 +1,12 @@
 #include <iostream>
 #include "list342.h"
 #include "child.h"
+
 using namespace std;
+
 int main()
 {
 
-    List342<string> some_strings;
-    List342<int> list_of_integers;
-    List342<Child> children;
-    List342<MyRandomObj> ordered_list_random_objs;
 
     Child c1("Angie", "Ham", 7), c2("Pradnya", "Dhala", 8),
     c3("Bill", "Vollmann", 13), c4("Cesar", "Ruiz", 6);
@@ -25,7 +23,7 @@ int main()
     class1.Insert(&c6);
     class1.Insert(&c5);
     cout << "class1: " << class1 << endl;
-    if (! class1.Insert(&c1))
+    if (!class1.Insert(&c1))
     {
         cout << "ERROR::: Duplicate" << endl;
     }
